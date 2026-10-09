@@ -1,0 +1,604 @@
+```css
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee8df;
+    color: #222;
+    margin: 0;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.logo {
+    text-align: center;
+    font-size: 55px;
+    color: #8a6a3f;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.sublogo {
+    text-align: center;
+    color: #755122;
+}
+
+.frase {
+    font-size: 18px;
+    color: #6f6254;
+    font-style: italic;
+    margin-top: 0;
+    text-align: center;
+}
+
+.perfumes,
+.sobre,
+.kits {
+    text-align: center;
+    color: #8a6a3f;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #8a6a3f;
+    font-size: 23px;
+}
+
+
+/* =========================
+   LINHA
+========================= */
+
+hr {
+    border: none;
+    border-top: 1px solid #c8b79d;
+    margin: 30px auto;
+    width: 80%;
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+
+.h21,
+.p1 {
+    color: #4d3413;
+    text-align: center;
+}
+
+.h31,
+.p3,
+.h1so,
+.frase-sobre {
+    text-align: center;
+}
+
+.p2 {
+    text-align: center;
+    margin: 40px 50px;
+    color: #362106;
+}
+
+
+/* =========================
+   PRODUTOS - INÍCIO
+========================= */
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.produtos article {
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f4ee;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    position: relative;
+}
+
+.produtos article img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   DESCONTO
+========================= */
+
+.desconto {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 55px;
+    height: 55px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.produtos button,
+.produtos2 button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #3a3024;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.produtos button:hover,
+.produtos2 button:hover {
+    background-color: #8a6a3f;
+}
+
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.whats,
+.insta {
+    display: flex;
+    height: 40px;
+    width: 70px;
+
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+
+    position: fixed;
+    bottom: 20px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.whats {
+    right: 20px;
+    background-color: green;
+}
+
+.insta {
+    right: 100px;
+    background-color: #e1306c;
+}
+
+
+/* =========================
+   FALE CONOSCO
+========================= */
+
+.fale {
+    position: fixed;
+    right: 40px;
+    bottom: 70px;
+
+    background-color: #f8f4ee;
+    padding: 5px 12px;
+    border-radius: 15px;
+    border: 1px solid #c8b79d;
+}
+
+.fale p {
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    background-color: #f8f4ee;
+    border-top: 2px solid #c8b79d;
+    text-align: center;
+}
+
+footer section {
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    color: #8a6a3f;
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* =========================
+   SOBRE NÓS
+========================= */
+
+.flor {
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
+
+    display: block;
+
+    margin: 5px auto -55px;
+}
+
+.psobre {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 30px;
+
+    background-color: #f8f4ee;
+    border: 1px solid #c8b79d;
+    border-radius: 18px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 19px;
+}
+
+.categorias-sobre {
+    text-align: center;
+    margin: 70px auto;
+}
+
+.categorias-sobre h2 {
+    color: #8a6a3f;
+    font-size: 30px;
+}
+
+.cards-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.cards-categorias article {
+    width: 220px;
+    padding: 25px;
+
+    background-color: #f8f4ee;
+    border: 1px solid #c8b79d;
+    border-radius: 18px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cards-categorias span {
+    font-size: 30px;
+    color: #8a6a3f;
+}
+
+.cards-categorias h3 {
+    color: #8a6a3f;
+}
+
+.cards-categorias p {
+    line-height: 1.5;
+    color: #5c5146;
+}
+
+
+/* =========================
+   FRASE DE DESTAQUE
+========================= */
+
+.frase-destaque {
+    text-align: center;
+    margin: 80px auto;
+    padding: 35px;
+}
+
+.frase-destaque p {
+    color: #8a6a3f;
+    font-size: 27px;
+    font-style: italic;
+}
+
+
+/* =========================
+   PÁGINA DE PERFUMES
+========================= */
+
+.titulo-perfumes {
+    text-align: center;
+    color: #8a6a3f;
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+.descricao-perfumes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    color: #8a6742;
+    font-size: 18px;
+    text-align: center;
+}
+
+.descricao-perfumes img {
+    width: 300px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.categoria-perfumes {
+    margin-top: 50px;
+}
+
+.categoria-perfumes h2 {
+    text-align: center;
+    color: #4d3413;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   PRODUTOS 2
+========================= */
+
+.produtos2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.produtos2 article {
+    width: 280px;
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #f8f4ee;
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+
+    position: relative;
+}
+
+.produtos2 article img {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   OUTROS TEXTOS
+========================= */
+
+.dif {
+    text-align: center;
+    margin: 20px 50px;
+    color: #362106;
+    position: relative;
+    bottom: 35px;
+}
+
+.promo {
+    font-size: 25px;
+    color: #8b2e2e;
+}
+
+.masculino {
+    color: #8a6a3f;
+}
+
+.feminino {
+    color: #9b5b72;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+
+    .logo {
+        font-size: 40px;
+        padding: 0 15px;
+    }
+
+    .sublogo {
+        padding: 0 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0 15px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        font-size: 18px;
+    }
+
+
+    /* Linhas e textos */
+
+    hr {
+        width: 90%;
+    }
+
+    .p2,
+    .dif {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    /* Produtos */
+
+    .produtos,
+    .produtos2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    .produtos article,
+    .produtos2 article {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .produtos article img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .produtos2 article img {
+        width: 100%;
+        height: auto;
+        max-height: 260px;
+    }
+
+
+    /* Sobre */
+
+    .psobre {
+        width: calc(100% - 30px);
+        margin: 50px auto;
+        padding: 20px;
+        font-size: 17px;
+    }
+
+    .categorias-sobre {
+        margin: 50px 15px;
+    }
+
+    .cards-categorias {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cards-categorias article {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* Frase */
+
+    .frase-destaque {
+        margin: 50px 15px;
+        padding: 20px;
+    }
+
+    .frase-destaque p {
+        font-size: 22px;
+    }
+
+
+    /* Página de perfumes */
+
+    .titulo-perfumes {
+        font-size: 28px;
+        padding: 0 15px;
+    }
+
+    .descricao-perfumes {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 15px;
+    }
+
+    .descricao-perfumes img {
+        width: 220px;
+        height: auto;
+    }
+
+
+    /* Redes sociais */
+
+    .whats {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .insta {
+        right: 95px;
+        bottom: 15px;
+    }
+
+    .fale {
+        right: 15px;
+        bottom: 65px;
+    }
+
+
+    /* Rodapé */
+
+    footer {
+        padding: 25px 15px;
+    }
+}
+```
