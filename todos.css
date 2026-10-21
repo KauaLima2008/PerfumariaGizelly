@@ -112,8 +112,6 @@ hr {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-   width: 350px
-   height: 350px
 }
 
 .produtos article {
